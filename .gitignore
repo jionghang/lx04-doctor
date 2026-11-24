@@ -1,0 +1,19 @@
+# 构建中间产物
+build/
+app-doctor/build/
+
+# 编译生成的 APK，仓库中的成品放在 apk 目录
+app-doctor/*.apk
+*.idsig
+
+# 签名密钥库，任何情况下都不提交
+*.jks
+*.keystore
+keystore.jks
+
+# 系统与编辑器文件
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/

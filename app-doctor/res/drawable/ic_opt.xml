@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 「优化助手」图标：仪表盘 + 指针，指针指向右上方 = 性能往上走。
+     48dp 视口，粗描边，保证在音箱的小图标尺寸下也看得清。 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <!-- 深色圆角底 -->
+    <path
+        android:fillColor="#0D1720"
+        android:pathData="M0,11 A11,11 0 0 1 11,0 h26 a11,11 0 0 1 11,11 v26 a11,11 0 0 1 -11,11 h-26 a11,11 0 0 1 -11,-11 z" />
+
+    <!-- 表盘外圈（暗色，左半边） -->
+    <path
+        android:strokeColor="#27505E"
+        android:strokeWidth="3.6"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M10,29 A14,14 0 0 1 38,29" />
+
+    <!-- 表盘右半边高亮（“已经提上来的那一段”） -->
+    <path
+        android:strokeColor="#3DE0B0"
+        android:strokeWidth="3.6"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M24,15 A14,14 0 0 1 38,29" />
+
+    <!-- 指针：从中心指向右上，长度只到半径的七成 -->
+    <path
+        android:strokeColor="#ECFFF8"
+        android:strokeWidth="3.2"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M24,29 L30.4,20.6" />
+
+    <!-- 指针轴心 -->
+    <path
+        android:fillColor="#3DE0B0"
+        android:pathData="M24,25.6 A3.4,3.4 0 1 1 23.99,25.6 z" />
+</vector>
